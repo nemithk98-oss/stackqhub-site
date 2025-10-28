@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stackqhub — Web Design & Development</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Sticky Header -->
+  <header class="site-header">
+    <a class="logo" href="#home">Cliqstack</a>
+    <nav class="nav">
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a class="btn btn-small" href="#contact">Start a Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container">
+      <p class="eyebrow">Web Design • Development • Worldwide</p>
+      <h1>High-performance websites that grow your business.</h1>
+      <p class="lede">We design, build and optimize fast, modern websites for brands across the globe.</p>
+      <div class="hero-cta">
+        <a class="btn" href="#contact">Get a Free Strategy Call</a>
+        <a class="link" href="#portfolio">See our work →</a>
+      </div>
+      <div class="trust">
+        <span>Trusted by startups & SMBs worldwide</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Services</h2>
+      <p class="section-lead">Everything you need to launch and scale online.</p>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Web Design</h3>
+          <p>Conversion-focused UI/UX in a clean, modern aesthetic.</p>
+          <ul>
+            <li>UX research & wireframes</li>
+            <li>Responsive design</li>
+            <li>Design systems</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Development</h3>
+          <p>Fast, secure builds with modern stacks.</p>
+          <ul>
+            <li>Flask / Django / Node</li>
+            <li>CMS or headless</li>
+            <li>Accessibility AA</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Performance & SEO</h3>
+          <p>Speed, structure, and technical SEO best practice.</p>
+          <ul>
+            <li>Core Web Vitals</li>
+            <li>On-page SEO</li>
+            <li>Analytics setup</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="section alt">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <div class="grid">
+        <figure class="work">
+          <img src="{{ url_for('static', filename='img/portfolio-1.jpg') }}" alt="Project 1">
+          <figcaption>Project 1</figcaption>
+        </figure>
+        <figure class="work">
+          <img src="{{ url_for('static', filename='img/portfolio-2.jpg') }}" alt="Project 2">
+          <figcaption>Project 2</figcaption>
+        </figure>
+        <figure class="work">
+          <img src="{{ url_for('static', filename='img/portfolio-3.jpg') }}" alt="Project 3">
+          <figcaption>Project 3</figcaption>
+        </figure>
+      </div>
+      <p class="center"><a class="btn btn-ghost" href="#contact">Start your project</a></p>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="process" class="section">
+    <div class="container">
+      <h2>Our Process</h2>
+      <ol class="steps">
+        <li><strong>Discover.</strong> Goals, audience, and scope.</li>
+        <li><strong>Design.</strong> Wireframes → polished UI.</li>
+        <li><strong>Build.</strong> Clean code, accessibility, QA.</li>
+        <li><strong>Launch.</strong> SEO, analytics, training.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="section alt">
+    <div class="container">
+      <h2>Pricing</h2>
+      <div class="pricing">
+        <div class="price-card">
+          <h3>Starter</h3>
+          <p class="price">£999</p>
+          <ul>
+            <li>Up to 5 pages</li>
+            <li>Responsive design</li>
+            <li>Basic SEO</li>
+          </ul>
+          <a class="btn btn-small" href="#contact">Choose Starter</a>
+        </div>
+        <div class="price-card featured">
+          <h3>Growth</h3>
+          <p class="price">£2,499</p>
+          <ul>
+            <li>Up to 12 pages</li>
+            <li>Blog/CMS</li>
+            <li>Advanced SEO + speed</li>
+          </ul>
+          <a class="btn btn-small" href="#contact">Choose Growth</a>
+        </div>
+        <div class="price-card">
+          <h3>Custom</h3>
+          <p class="price">Request</p>
+          <ul>
+            <li>Complex features</li>
+            <li>Integrations</li>
+            <li>Ongoing support</li>
+          </ul>
+          <a class="btn btn-small" href="#contact">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <div class="container">
+      <h2>FAQ</h2>
+      <details>
+        <summary>How long does a project take?</summary>
+        <p>Typical builds are 2–6 weeks depending on scope.</p>
+      </details>
+      <details>
+        <summary>Do you work worldwide?</summary>
+        <p>Yes — fully remote with UK hours and global clients.</p>
+      </details>
+      <details>
+        <summary>Can you migrate my current site?</summary>
+        <p>Absolutely. We’ll plan a zero-downtime migration.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2>Start a Project</h2>
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks! We will contact you.');">
+        <div class="row">
+          <input type="text" placeholder="Your name" required>
+          <input type="email" placeholder="Email address" required>
+        </div>
+        <input type="text" placeholder="Company (optional)">
+        <textarea rows="6" placeholder="Tell us about your project" required></textarea>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">Stackqhub</div>
+        <p>High-performance web design & development — worldwide.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="foot-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="mailto:hello@stackqhub.com">kev.ats@outlook.com</a></p>
+      </div>
+    </div>
+    <p class="copy">© 2025 Cliqstack</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
